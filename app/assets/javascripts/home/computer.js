@@ -7,7 +7,6 @@ $(function() {
       'use strict';
 
       var isCurrentPlayerRed = true,
-        resetGame = $("#reset"),
         disk = {
             red: {
                 name: 'red',
