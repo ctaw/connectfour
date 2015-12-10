@@ -1,5 +1,5 @@
 .jumbotron
-  #start-div.hidden
+  #start-div
     h1 Connect Four
     p.lead Connect four of your commonly colored discs in a row before your opponent.
     p VS
@@ -12,12 +12,18 @@
   
   / Game Starts Here...
   #vs-computer.hidden
-
-  #vs-human
     #game
+      p VS Computer
+      canvas#connectfour height="500" width="500"
 
-      canvas#fourinarow height="500" width="500"
+      br
+      a.button.btn.btn-default.btn-cancel type="button" href="/"  Back
 
-javascript:
-  $(document).ready().fourinarow();
 
+  #vs-human.hidden
+    #game
+      p 2 Players ( Player 1 - Red ; Player 2 - Yellow )
+      canvas#connectfourhuman height="500" width="500"
+
+      br
+      a.button.btn.btn-default.btn-cancel type="button" href="/"  Back

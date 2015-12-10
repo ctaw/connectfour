@@ -1,9 +1,9 @@
 $(function() {
 
-  if ($.connectfourhuman)
+  if ($.connectfour)
       return;
 
-  $.fn.connectfourhuman = function(options) {
+  $.fn.connectfour = function(options) {
       'use strict';
 
       var isCurrentPlayerRed = true,
@@ -31,7 +31,7 @@ $(function() {
         canvas, context, winner = '',
         settings = $.extend({
             canvas: {
-                id: 'connectfourhuman',
+                id: 'connectfour',
                 background: '#428bca'
             },
             disk: {
