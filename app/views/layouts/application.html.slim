@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Connect Four
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = favicon_link_tag 'logo.png', rel: 'shortcut icon', type: 'image/png'
+
+    link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+    = csrf_meta_tags
+
+  body
+    .container
+      = render '/partials/header'
+      = yield
+      = render '/partials/footer'

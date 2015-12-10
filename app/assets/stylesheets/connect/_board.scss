@@ -1,0 +1,30 @@
+td {
+  margin: 40px auto 0 auto;
+  background:#eee;
+}
+
+#game-board {
+  background: #428bca;
+}
+
+#game,#game-board {
+  width:580px;
+}
+
+#game-board td {
+  width:76px;
+  height:76px;
+  border-radius:38px;        
+}
+
+#game-board .red {
+  background:#f00;
+}
+
+#game-board .yellow {
+  background:#ff0;
+}
+
+.yellow,.red {
+  box-shadow: inset 0 0 20px rgba(100,100,100,0.6);
+}

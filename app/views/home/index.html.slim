@@ -1,0 +1,23 @@
+.jumbotron
+  #start-div.hidden
+    h1 Connect Four
+    p.lead Connect four of your commonly colored discs in a row before your opponent.
+    p VS
+    p
+      .btn-group aria-label="..." role="group" 
+        button.btn.btn-danger#computer type="button"  Computer
+        button.btn.btn-warning#human type="button" 2 Players
+
+
+  
+  / Game Starts Here...
+  #vs-computer.hidden
+
+  #vs-human
+    #game
+
+      canvas#fourinarow height="500" width="500"
+
+javascript:
+  $(document).ready().fourinarow();
+
